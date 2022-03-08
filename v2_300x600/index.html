@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Banner</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="bundle.css">
+    <meta name="ad.size" content="width=300,height=600">
+  </head>
+
+  <body>
+    <script>var clickTag = '#';</script>
+
+    <div id="backup" onclick="window.open(window.clickTag || window.clickTAG)"></div>
+    <div id="ad_content" class="invisible">
+
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300" height="600px" viewbox="0 0 300 600" xml:space="preserve">
+        <style type="text/css">
+          .st0 {
+            fill: #FFFFFF;
+            stroke: #000000;
+            stroke-miterlimit: 10;
+          }
+        </style>
+        <defs>
+          <mask id="msk">
+            <polygon id="polygon" class="st0" points="0,0 0,0 0,0 0,0 0,0" />
+          </mask>
+        </defs>
+
+
+        <mask id="myMask">
+          <rect x="0" y="0" width="300" height="600px" fill="white" />
+
+          <rect x="44" y="29" width="178" height="22" fill="black" />
+        </mask>
+
+
+
+        <image id="txt_1" href="img/txt_1.svg" x=52 y=19></image>
+        <image id="txt_2" href="img/txt_2.svg" x=52 y=54></image>
+        <!-- <image id="txt_2b" href="img/txt_2b.svg" x=52 y=88 ></image> -->
+
+
+
+        <image id="wing" href="img/wing.svg" x=20 y=19></image>
+        <image class="logo" href="img/logo.svg" x=19 y=538></image>
+        <image href="img/legal.svg" x=9 y=589></image>
+
+        <image href="img/slogan.svg" x=67 y=565></image>
+
+
+
+        <g id="ef" mask="url(#msk)">
+          <image href="img/img@2x.jpg" width="300" height="600"></image>
+          <image href="img/wing.svg" x=20 y=19></image>
+
+
+          <image id="txt_3" href="img/txt_3.svg" x=50 y=20></image>
+
+
+          <image class="logo_white" href="img/logo_white.svg" x=-123 y=517></image>
+          <image href="img/slogan_white.svg" x=68 y=565></image>
+          <image href="img/legal_white.svg" x=9 y=589></image>
+          <image id="cta" href="img/cta.svg" x=17 y=169></image>
+
+          <image id="cta_txt" href="img/cta_txt.svg" x=35 y=180></image>
+          < </g>
+
+
+
+      </svg>
+      <div id="cta-bg" class="invisible"></div>
+      <div id="cta_ef" class="sprite-svg cta_ef invisible"></div>
+
+
+
+    </div>
+
+    <!--[if !IE]><!-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="bundle.js"></script>
+    <!--<![endif]-->
+    <!--[if IE]>
+    <script>
+      document.getElementById('backup').className = 'backup'; // IE9 or below
+    </script>
+    <![endif]-->
+  </body>
+
+</html>
